@@ -1,5 +1,6 @@
 import 'package:character_creator/create_character_modal.dart';
 import 'package:character_creator/domain/character.dart';
+import 'package:character_creator/main_character_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -51,12 +52,18 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: _characters
-              .map((e) => ElevatedButton(
+              .map((character) => ElevatedButton(
                   onPressed: () {
                     // ignore: avoid_print
-                    print('edit ${e.name}');
+                    print('edit ${character.name}');
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => MainCharacterPageRoute(character),
+                      ),
+                    );
                   },
-                  child: Text(e.name)))
+                  child: Text(character.name)))
               .toList(),
         ),
       ),
