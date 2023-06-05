@@ -1,4 +1,4 @@
-import 'package:character_creator/domain/text_attribute.dart';
+import 'package:character_creator/domain/model/text_attribute.dart';
 
 class Lifepath {
   TextAttribute culturalOrigins = TextAttribute('', 'Origen cultural',

@@ -1,4 +1,5 @@
-import 'package:character_creator/domain/character.dart';
+
+import 'package:character_creator/domain/model/character.dart';
 import 'package:flutter/material.dart';
 
 class MainCharacterPageRoute extends StatefulWidget {

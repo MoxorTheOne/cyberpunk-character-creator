@@ -1,6 +1,6 @@
-import 'package:character_creator/create_character_modal.dart';
-import 'package:character_creator/domain/character.dart';
-import 'package:character_creator/main_character_page.dart';
+import 'package:character_creator/domain/model/character.dart';
+import 'package:character_creator/presentation/view/create_character_modal.dart';
+import 'package:character_creator/presentation/view/main_character_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {

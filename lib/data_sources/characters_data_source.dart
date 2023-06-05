@@ -1,4 +1,6 @@
-import 'package:character_creator/domain/character.dart';
+
+
+import 'package:character_creator/domain/model/character.dart';
 
 class CharactersDataSource {
   static List<Character> _data = [];
