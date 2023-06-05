@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "856192356591",
+    "project_id": "cyberpunk-character-creator",
+    "storage_bucket": "cyberpunk-character-creator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856192356591:android:c1524a320157600d308b1a",
+        "android_client_info": {
+          "package_name": "com.example.character_creator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "856192356591-d0cs3h5v4t1v13q61pjvbepk2urqhqvr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVzRI4u3zIOTXgnXhGc90cVa_6P52aSEw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "856192356591-d0cs3h5v4t1v13q61pjvbepk2urqhqvr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
