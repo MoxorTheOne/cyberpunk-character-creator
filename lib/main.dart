@@ -2,8 +2,16 @@ import 'package:character_creator/domain/model/character.dart';
 import 'package:character_creator/presentation/view/create_character_modal.dart';
 import 'package:character_creator/presentation/view/main_character_page.dart';
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+import 'firebase_options.dart';
+
+Future main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
   runApp(const MyApp());
 }
 
