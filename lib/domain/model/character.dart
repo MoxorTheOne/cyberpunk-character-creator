@@ -14,4 +14,10 @@ class Character {
       'lifepath': lifepath.toJson(),
     };
   }
+
+  static Character fromJson(Map<String,dynamic> json) {
+    var character = Character(json['id'], json['name']);
+    // character.lifepath = Lifepath.fromJson(json['lifepath']);//TODO
+    return character;
+  }
 }
