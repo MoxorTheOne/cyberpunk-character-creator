@@ -1,5 +1,6 @@
-
+import 'package:character_creator/domain/actions/create_character.dart';
 import 'package:character_creator/domain/model/character.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 Future<Character?> createNewCharacter(BuildContext context) async {
@@ -22,11 +23,10 @@ Future<Character?> createNewCharacter(BuildContext context) async {
             ),
             const SizedBox(height: 16.0),
             ElevatedButton(
-              onPressed: () {
-                Navigator.pop(
-                  context,
-                  Character(newItemName), // Return the ModalResult object
-                );
+              onPressed: () async {
+                await CreateCharacter()
+                    .create(newItemName)
+                    .then((value) => Navigator.pop(context));
               },
               child: const Text('Add Item'),
             ),
